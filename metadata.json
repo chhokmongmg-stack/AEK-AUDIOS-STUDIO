@@ -1,0 +1,8 @@
+{
+  "name": "ឌីម៉ង់ AEK AUDIOS AI",
+  "description": "កម្មវិធីនិពន្ធសាច់រឿង និងរៀបចំប្លង់ថតភាពយន្តឆ្លាតវៃ ដោយប្រើបច្ចេកវិទ្យា AI។",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

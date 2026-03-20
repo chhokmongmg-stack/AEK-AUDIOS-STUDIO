@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+@theme {
+  --font-khmer: "Kantumruy Pro", sans-serif;
+  --font-serif: "Libre Baskerville", serif;
+  
+  --color-dash-bg: #1a1a1a;
+  --color-dash-sidebar: #251619;
+  --color-dash-card: #2a1a1d;
+  --color-dash-accent: #1ebbb4; /* Teal/Cyan */
+  --color-dash-border: #3d2a2e;
+  --color-dash-text: #e0d0d0;
+}
+
+@keyframes breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+}
+
+body {
+  font-family: var(--font-khmer);
+  background-color: var(--color-dash-bg);
+  color: var(--color-dash-text);
+  margin: 0;
+  overflow: hidden;
+}
+
+.khmer-serif {
+  font-family: var(--font-khmer);
+  font-weight: 500;
+}
+
+.dash-border {
+  border: 1px solid var(--color-dash-border);
+}
+
+.ai-badge {
+  background-color: white;
+  color: black;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 2px 4px;
+  border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+}
+
+.cyan-btn {
+  background-color: var(--color-dash-accent);
+  color: white;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  font-size: 12px;
+  position: relative;
+}
+
+.cyan-btn::after {
+  content: '+';
+  position: absolute;
+  right: 4px;
+  font-size: 14px;
+}
+
+.sidebar-item {
+  background-color: var(--color-dash-card);
+  border: 1px solid var(--color-dash-border);
+  padding: 8px;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 16px;
+  color: #b0a0a0;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.menu-item svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-dash-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-dash-border);
+  border-radius: 3px;
+}
+
+/* Markdown styling */
+.markdown-body p {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 3px;
+}
+
+/* Markdown styling */
+.markdown-body p {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.khmer-font {
+  font-family: "Kantumruy Pro", sans-serif;
+}
+
