@@ -18,12 +18,13 @@ html, body {
   --font-khmer: "Kantumruy Pro", sans-serif;
   --font-serif: "Libre Baskerville", serif;
   
-  --color-dash-bg: #1a1a1a;
-  --color-dash-sidebar: #251619;
-  --color-dash-card: #2a1a1d;
-  --color-dash-accent: #1ebbb4; /* Teal/Cyan */
-  --color-dash-border: #3d2a2e;
-  --color-dash-text: #e0d0d0;
+  --color-dash-bg: #0f0f0f;
+  --color-dash-sidebar: #1a1a1a;
+  --color-dash-card: #222222;
+  --color-dash-accent: #4a1a24; /* Maroon */
+  --color-dash-neon: #00ff00; /* Neon Green */
+  --color-dash-border: #333333;
+  --color-dash-text: #e0e0e0;
 }
 
 @keyframes breathe {
@@ -44,21 +45,139 @@ body {
   font-weight: 500;
 }
 
+.khmer-font {
+  font-family: "Kantumruy Pro", sans-serif;
+}
+
 .dash-border {
   border: 1px solid var(--color-dash-border);
 }
 
+.maroon-border {
+  border: 2px solid var(--color-dash-accent);
+}
+
+.neon-text {
+  color: var(--color-dash-neon);
+  text-shadow: 0 0 5px var(--color-dash-neon);
+}
+
 .ai-badge {
-  background-color: white;
-  color: black;
+  background-color: #4a1a24;
+  color: white;
   font-size: 10px;
   font-weight: bold;
-  padding: 2px 4px;
+  padding: 2px 6px;
   border-radius: 2px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #000;
+  border: 1px solid #6a2a34;
+}
+
+.panel-bg {
+  background-color: var(--color-dash-sidebar);
+  border: 1px solid var(--color-dash-border);
+}
+
+.input-row {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.action-btn {
+  background-color: #222;
+  border: 1px solid #333;
+  color: #aaa;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s;
+}
+
+.action-btn:hover {
+  background-color: #333;
+  color: white;
+}
+
+.send-btn {
+  background-color: #2a3a4a;
+  color: #4da6ff;
+  border: 1px solid #3a4a5a;
+  padding: 6px 20px;
+  border-radius: 6px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.bottom-toolbar {
+  background-color: #0f0f0f;
+  border-top: 1px solid #222;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebar-menu-btn {
+  background-color: #222;
+  border: 1px solid #333;
+  color: white;
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.voice-over-btn {
+  background-color: #222;
+  border: 1px solid #444;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.invite-btn {
+  background-color: #222;
+  border: 1px solid #444;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.red-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #ff0000;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #ff0000;
 }
 
 .cyan-btn {
@@ -128,25 +247,8 @@ body {
   line-height: 1.5;
 }
 
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-  width: 6px;
+/* Specific style for mobile close button path */
+aside > button:nth-of-type(1) > svg:nth-of-type(1) > path:nth-of-type(1) {
+  height: 0px;
+  width: 0px;
 }
-::-webkit-scrollbar-track {
-  background: #1a1a1a;
-}
-::-webkit-scrollbar-thumb {
-  background: #333;
-  border-radius: 3px;
-}
-
-/* Markdown styling */
-.markdown-body p {
-  margin-bottom: 0.5rem;
-  line-height: 1.5;
-}
-
-.khmer-font {
-  font-family: "Kantumruy Pro", sans-serif;
-}
-
