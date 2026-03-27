@@ -188,9 +188,6 @@ export async function* streamWithSokcheat(messages: Message[]) {
   }
 }
 
-// Alias for Molyza assistant
-export const streamWithMolyza = streamWithSokcheat;
-
 export interface LiveCallbacks {
   onopen?: () => void;
   onmessage: (message: LiveServerMessage) => void;
